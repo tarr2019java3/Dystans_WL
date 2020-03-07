@@ -17,15 +17,8 @@ public class Point {
         this.y = y;
     }
     public double distance(Point p1) {
-        //  System.out.println(this.x);
-        // System.out.println(this.y);
-        double x = p1.getX() - this.x;
-        double y = p1.getY() - this.x;
-
-        Math.sqrt((x * x) + (y * y));
-
-        // System.out.println(p1.getX());
-        // System.out.println(p1.getY());
+        double odl = Math.sqrt(Math.pow((y - x), 2) + Math.pow((p1.getY() - p1.getX()), 2));
+        return odl;
     }
 
 }
